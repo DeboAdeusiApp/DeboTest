@@ -30,9 +30,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.deboapps.Debotest" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31d4b963-8b10-49e7-9ba5-9d402308d467" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/deboapps/Debotest/MyActivity.java" />
-    </list>
+    <list default="true" id="31d4b963-8b10-49e7-9ba5-9d402308d467" name="Default" comment="" />
     <ignored path="Debotest.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -106,6 +104,9 @@
     <option name="KEY_STORE_PATH" value="C:\Users\Administrator.Adebowalex-PC\Google Drive\KEYSTORE\DeboAppTest.jks" />
     <option name="KEY_ALIAS" value="DeboAppTest" />
     <option name="REMEMBER_PASSWORDS" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -483,7 +484,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1320" height="784" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
