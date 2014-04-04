@@ -4,10 +4,7 @@ import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.CompoundButton;
-import android.widget.Switch;
-import android.widget.Toast;
+import android.widget.*;
 
 public class MyActivity extends Activity {
     /**
@@ -15,7 +12,8 @@ public class MyActivity extends Activity {
      */
     private Button btnSelected;
     private Switch switchSelected;
-
+    private ImageView imageViewSelected;
+    private TextView textViewSelected;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -23,6 +21,7 @@ public class MyActivity extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        initializeApp();
         final SharedPreferences myPrefs = getSharedPreferences("myPrefs", MODE_PRIVATE);
         switchSelected = (Switch) findViewById(R.id.switch1);
         switchSelected.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -55,6 +54,12 @@ public class MyActivity extends Activity {
 
             }
         });
+
+    }
+
+    private void initializeApp() {
+        imageViewSelected = (ImageView) findViewById(R.id.imageView);
+        textViewSelected = (TextView) findViewById(R.id.textView);
 
     }
 }
