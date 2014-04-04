@@ -4,19 +4,19 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
               android:weightSum="1">
-    <!--<Button
+    <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Toast ME!"
             android:id="@+id/btnToast" android:layout_gravity="center_horizontal"/>
-          -->
-    <!--<Switch
+
+    <Switch
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Message GoofyNess"
             android:id="@+id/switch1" android:textOn="Goofy" android:textOff="Not Goofy"
             android:textAlignment="center" android:padding="10dp"/>
-    -->
+
 
     <ImageView
             android:layout_width="match_parent"

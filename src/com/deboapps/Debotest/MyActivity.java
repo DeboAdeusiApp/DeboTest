@@ -23,14 +23,14 @@ public class MyActivity extends Activity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        final SharedPreferences myPrefs = getSharedPreferences("myPrefs", MODE_PUBLIC);
+        final SharedPreferences myPrefs = getSharedPreferences("myPrefs", MODE_PRIVATE);
         switchSelected = (Switch) findViewById(R.id.switch1);
         switchSelected.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     // The toggle is enabled
                     //Toast.makeText(getApplicationContext(),
-                            //"VALUE ON!", Toast.LENGTH_LONG).show();
+                    //"VALUE ON!", Toast.LENGTH_LONG).show();
                     SharedPreferences.Editor e = myPrefs.edit();
                     e.putString("MessageText", "Thanks For Everything DIDI!"); // add or overwrite someValue
                     e.commit(); // this saves to disk and notifies observers
