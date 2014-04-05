@@ -1,56 +1,43 @@
 package com.deboapps.Debotest;
 
 import android.app.Activity;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 
-public class MyActivity extends Activity {
+import static android.view.View.OnClickListener;
+
+public class MyActivity extends Activity implements CompoundButton.OnCheckedChangeListener{
     /**
      * Called when the activity is first created.
      */
     private Button btnSelected;
-    private Switch switchSelected;
     private ImageView imageViewSelected;
     private TextView textViewSelected;
+    private OnClickListener tapListener;
+    private int counter = 0;
+    public String MessageText = "DEFAULT";
 
-    @Override
     public void onCreate(Bundle savedInstanceState) {
         /** does this load before layout is drawn?**/
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        initializeApp();
-        final SharedPreferences myPrefs = getSharedPreferences("myPrefs", MODE_PRIVATE);
-        switchSelected = (Switch) findViewById(R.id.switch1);
-        switchSelected.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    // The toggle is enabled
-                    //Toast.makeText(getApplicationContext(),
-                    //"VALUE ON!", Toast.LENGTH_LONG).show();
-                    SharedPreferences.Editor e = myPrefs.edit();
-                    e.putString("MessageText", "Thanks For Everything DIDI!"); // add or overwrite someValue
-                    e.commit(); // this saves to disk and notifies observers
 
-                } else {
-                    // The toggle is disabled
-                    //Toast.makeText(getApplicationContext(),
-                            //"VALUE OFF! ITS OFF!", Toast.LENGTH_LONG).show();
-                    SharedPreferences.Editor e = myPrefs.edit();
-                    e.putString("MessageText", "Thanks!"); // add or overwrite someValue
-                    e.commit(); // this saves to disk and notifies observers
-                }
-            }
-        });
+        initializeApp();
+
+        Switch s = (Switch) findViewById(R.id.switch1);
+        if (s != null) {
+            s.setOnCheckedChangeListener(this);
+        }
+
         btnSelected = (Button) findViewById(R.id.btnToast);
-        btnSelected.setOnClickListener(new View.OnClickListener() {
+        btnSelected.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View arg0) {
-                String msgText = myPrefs.getString("MessageText","");
-                Toast.makeText(getApplicationContext(),
-                        msgText, Toast.LENGTH_LONG).show();
+                String msgText = MessageText;
+                Toast.makeText(getApplication(),
+                        msgText, Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -58,8 +45,33 @@ public class MyActivity extends Activity {
     }
 
     private void initializeApp() {
-        imageViewSelected = (ImageView) findViewById(R.id.imageView);
+        imageViewSelected = (ImageView) findViewById(R.id.imageView); //image being used for module 3
         textViewSelected = (TextView) findViewById(R.id.textView);
 
+        tapListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                touchdroid();
+            }
+        };
+        imageViewSelected.setOnClickListener(tapListener);
+    }
+
+    private void touchdroid() {
+        counter++;
+        String temp;
+
+        temp = String.format("%d times",counter);
+        //temp = "GO!";
+        //Toast.makeText(getApplicationContext(),temp, Toast.LENGTH_SHORT).show();
+        temp = ("you have clicked "+ temp);
+        textViewSelected.setText(temp);
+
+    }
+
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        //Toast.makeText(this, "Monitored switch is " + (isChecked ? "on" : "off"),
+               // Toast.LENGTH_SHORT).show();
+        MessageText = (isChecked ? "on" : "off");
     }
 }

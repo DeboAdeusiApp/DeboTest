@@ -10,7 +10,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/imageView" android:src="@drawable/pastro" android:layout_weight="0.30"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            />
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -28,13 +29,16 @@
             android:paddingTop="20dp"
             android:paddingBottom="30dp"
             android:paddingLeft="10dp"
-            android:paddingRight="10dp"/>
+            android:paddingRight="10dp"
+            android:checked="true"
+            />
 
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Toast ME!"
             android:id="@+id/btnToast"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_horizontal"
+            android:longClickable="false"/>
 </LinearLayout>
 

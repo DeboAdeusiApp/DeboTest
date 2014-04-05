@@ -30,9 +30,9 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.deboapps.Debotest" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31d4b963-8b10-49e7-9ba5-9d402308d467" name="Default" comment="Minor Edit">
+    <list default="true" id="31d4b963-8b10-49e7-9ba5-9d402308d467" name="Default" comment="Toggles and Picture Counter Working!">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/android/view/annotations.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/deboapps/Debotest/MyActivity.java" afterPath="$PROJECT_DIR$/src/com/deboapps/Debotest/MyActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -60,10 +60,11 @@
       <file leaf-file-name="MyActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/deboapps/Debotest/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64" vertical-offset="510" max-vertical-offset="1037">
-              <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.4814815" vertical-offset="697" max-vertical-offset="1156">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#initializeApp#0;class#MyActivity#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -72,10 +73,10 @@
       <file leaf-file-name="main.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
           <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="680">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="850">
+              <caret line="22" column="4" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="38" />
               <folding>
-                <element signature="e#1293#1314#0" expanded="true" />
+                <element signature="e#764#785#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,6 +110,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Debo" />
         <option value="DeboDev" />
       </list>
     </option>
@@ -300,11 +302,14 @@
     <property name="ExportedApkPath" value="C:\Users\Administrator.Adebowalex-PC\IdeaProjects\Debotest\Debotest.apk" />
     <property name="AndroidRunProguardForReleaseBuild" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="197" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="327" />
     <property name="options.lastSelected" value="preferences.sourceCode.XML" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="OverrideImplement.combined" value="true" />
+    <property name="OverrideImplement.overriding.sorted" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -486,6 +491,15 @@
       <created>1396423089243</created>
       <updated>1396423089243</updated>
     </task>
+    <task id="LOCAL-00001" summary="Minor Edit">
+      <created>1396653226800</created>
+      <updated>1396653226800</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Minimally Interactive">
+      <created>1396655833922</created>
+      <updated>1396655833922</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -504,8 +518,8 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32988167" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34171596" sideWeight="0.6978528" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2795858" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3402367" sideWeight="0.6978528" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -536,10 +550,14 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Minor Edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor Edit" />
+    <MESSAGE value="Minimally Interactive" />
+    <MESSAGE value="Toggles and Picture Counter Working!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Toggles and Picture Counter Working!" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -552,6 +570,7 @@
           <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#initializeApp#0;class#MyActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -561,7 +580,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="578" max-vertical-offset="680">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
-            <element signature="e#1293#1314#0" expanded="true" />
+            <element signature="e#764#785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -583,6 +602,7 @@
           <caret line="43" column="72" selection-start-line="43" selection-start-column="72" selection-end-line="43" selection-end-column="72" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#initializeApp#0;class#MyActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -592,7 +612,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="425">
           <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
-            <element signature="e#1293#1314#0" expanded="true" />
+            <element signature="e#764#785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -606,6 +626,7 @@
           <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#initializeApp#0;class#MyActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -615,7 +636,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="238">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#1293#1314#0" expanded="true" />
+            <element signature="e#764#785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -629,6 +650,7 @@
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#initializeApp#0;class#MyActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -638,7 +660,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1326">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#1293#1314#0" expanded="true" />
+            <element signature="e#764#785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -664,10 +686,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
       <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="680">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="799">
+          <caret line="22" column="4" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="38" />
           <folding>
-            <element signature="e#1293#1314#0" expanded="true" />
+            <element signature="e#764#785#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -677,10 +699,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/deboapps/Debotest/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64" vertical-offset="510" max-vertical-offset="1037">
-          <caret line="50" column="44" selection-start-line="50" selection-start-column="44" selection-end-line="50" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.4814815" vertical-offset="697" max-vertical-offset="1156">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#initializeApp#0;class#MyActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
